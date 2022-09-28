@@ -1,0 +1,28 @@
+.item {
+	background-color: #531;
+	border: #320 solid 1rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.item:hover .author {
+	opacity: 1;
+}
+
+.item .picture {
+	width: calc(100% - 1rem);
+	height: calc(100% - 1rem);
+	object-fit: cover;
+}
+
+.author {
+	opacity: 0;
+	position: absolute;
+	bottom: -1rem;
+	color: #fe7;
+	transition: .5s;
+}
