@@ -70,7 +70,7 @@ function App() {
 		`,
     ]
     const randomTemplate = (): string => {
-        const idx = Math.ceil(Math.random() * templates.length);
+        const idx = Math.floor(Math.random() * templates.length);
         return templates[idx];
     }
     const prevPageHandler = () => {
